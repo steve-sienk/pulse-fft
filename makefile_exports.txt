@@ -1,0 +1,16 @@
+[
+    '_free',
+    '_malloc',
+    '_kiss_fftr_alloc',
+    '_kiss_fftr',
+    '_kiss_fftri',
+    '_kiss_fft_alloc',
+    '_kiss_fft',
+    '_kiss_fft_stride',
+    '_kiss_fft_cleanup',
+    '_kiss_fft_next_fast_size',
+    '_kiss_fftr_alloc',
+    '_kiss_fftr',
+    '_kiss_fftri',
+    '_kf_work'
+]

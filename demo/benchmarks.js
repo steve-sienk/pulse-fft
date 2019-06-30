@@ -189,6 +189,13 @@ var tests = [testFFTasm, testFFTCCasm, testFFTwasm, testFFTCCwasm];
 var nextTest = 0;
 var nextSize = 0;
 var interval;
+var audioContext;
+
+document.querySelector('button').addEventListener('click', function() {
+  audioContext.resume().then(() => {
+    console.log('Playback resumed successfully');
+  });
+});
 
 function test() {
     clearInterval(interval);
@@ -253,7 +260,7 @@ function testWASMmic (size, freqData) {
 
 
 
-    var audioContext = new AudioContext(),
+    audioContext = new AudioContext(),
         microphone_stream = null,
         script_processor_node = null;
 
